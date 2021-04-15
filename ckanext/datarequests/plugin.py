@@ -17,6 +17,8 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with CKAN Data Requests Extension. If not, see <http://www.gnu.org/licenses/>.
 
+import os
+import sys
 from functools import partial
 
 from ckan import plugins as p
@@ -24,12 +26,7 @@ from ckan.plugins import toolkit as tk
 from ckan.common import config
 from ckan.lib import helpers as h
 
-from . import auth
-from . import actions
-from . import constants
-from . import helpers
-from . import os
-from . import sys
+from . import auth, actions, constants, helpers
 
 
 def get_config_bool_value(config_name, default_value=False):
