@@ -19,8 +19,7 @@
 
 from ckan.plugins import toolkit as tk
 
-from . import constants, db
-import .plugin as datarequests
+from . import constants, db, plugin as datarequests
 
 
 def validate_datarequest(context, request_data):
